@@ -1,0 +1,608 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7A8172E4233251AD00F47377 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A8172E3233251AD00F47377 /* AppDelegate.swift */; };
+		7A8172E6233251AD00F47377 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A8172E5233251AD00F47377 /* ViewController.swift */; };
+		7A8172E9233251AD00F47377 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7A8172E7233251AD00F47377 /* Main.storyboard */; };
+		7A8172EC233251AD00F47377 /* Find_ADA_Locker.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7A8172EA233251AD00F47377 /* Find_ADA_Locker.xcdatamodeld */; };
+		7A8172EE233251AE00F47377 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7A8172ED233251AE00F47377 /* Assets.xcassets */; };
+		7A8172F1233251AE00F47377 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7A8172EF233251AE00F47377 /* LaunchScreen.storyboard */; };
+		7A8172FC233251AF00F47377 /* Find_ADA_LockerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A8172FB233251AF00F47377 /* Find_ADA_LockerTests.swift */; };
+		7A817307233251AF00F47377 /* Find_ADA_LockerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A817306233251AF00F47377 /* Find_ADA_LockerUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7A8172F8233251AF00F47377 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7A8172D8233251AD00F47377 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7A8172DF233251AD00F47377;
+			remoteInfo = "Find ADA Locker";
+		};
+		7A817303233251AF00F47377 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7A8172D8233251AD00F47377 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7A8172DF233251AD00F47377;
+			remoteInfo = "Find ADA Locker";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		7A8172E0233251AD00F47377 /* Find ADA Locker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Find ADA Locker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7A8172E3233251AD00F47377 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		7A8172E5233251AD00F47377 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		7A8172E8233251AD00F47377 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		7A8172EB233251AD00F47377 /* Find_ADA_Locker.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Find_ADA_Locker.xcdatamodel; sourceTree = "<group>"; };
+		7A8172ED233251AE00F47377 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7A8172F0233251AE00F47377 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		7A8172F2233251AE00F47377 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7A8172F7233251AF00F47377 /* Find ADA LockerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Find ADA LockerTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7A8172FB233251AF00F47377 /* Find_ADA_LockerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Find_ADA_LockerTests.swift; sourceTree = "<group>"; };
+		7A8172FD233251AF00F47377 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7A817302233251AF00F47377 /* Find ADA LockerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Find ADA LockerUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7A817306233251AF00F47377 /* Find_ADA_LockerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Find_ADA_LockerUITests.swift; sourceTree = "<group>"; };
+		7A817308233251AF00F47377 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7A8172DD233251AD00F47377 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7A8172F4233251AF00F47377 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7A8172FF233251AF00F47377 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7A8172D7233251AD00F47377 = {
+			isa = PBXGroup;
+			children = (
+				7A8172E2233251AD00F47377 /* Find ADA Locker */,
+				7A8172FA233251AF00F47377 /* Find ADA LockerTests */,
+				7A817305233251AF00F47377 /* Find ADA LockerUITests */,
+				7A8172E1233251AD00F47377 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7A8172E1233251AD00F47377 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7A8172E0233251AD00F47377 /* Find ADA Locker.app */,
+				7A8172F7233251AF00F47377 /* Find ADA LockerTests.xctest */,
+				7A817302233251AF00F47377 /* Find ADA LockerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7A8172E2233251AD00F47377 /* Find ADA Locker */ = {
+			isa = PBXGroup;
+			children = (
+				7A8172E3233251AD00F47377 /* AppDelegate.swift */,
+				7A8172E5233251AD00F47377 /* ViewController.swift */,
+				7A8172E7233251AD00F47377 /* Main.storyboard */,
+				7A8172ED233251AE00F47377 /* Assets.xcassets */,
+				7A8172EF233251AE00F47377 /* LaunchScreen.storyboard */,
+				7A8172F2233251AE00F47377 /* Info.plist */,
+				7A8172EA233251AD00F47377 /* Find_ADA_Locker.xcdatamodeld */,
+			);
+			path = "Find ADA Locker";
+			sourceTree = "<group>";
+		};
+		7A8172FA233251AF00F47377 /* Find ADA LockerTests */ = {
+			isa = PBXGroup;
+			children = (
+				7A8172FB233251AF00F47377 /* Find_ADA_LockerTests.swift */,
+				7A8172FD233251AF00F47377 /* Info.plist */,
+			);
+			path = "Find ADA LockerTests";
+			sourceTree = "<group>";
+		};
+		7A817305233251AF00F47377 /* Find ADA LockerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				7A817306233251AF00F47377 /* Find_ADA_LockerUITests.swift */,
+				7A817308233251AF00F47377 /* Info.plist */,
+			);
+			path = "Find ADA LockerUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7A8172DF233251AD00F47377 /* Find ADA Locker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7A81730B233251AF00F47377 /* Build configuration list for PBXNativeTarget "Find ADA Locker" */;
+			buildPhases = (
+				7A8172DC233251AD00F47377 /* Sources */,
+				7A8172DD233251AD00F47377 /* Frameworks */,
+				7A8172DE233251AD00F47377 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Find ADA Locker";
+			productName = "Find ADA Locker";
+			productReference = 7A8172E0233251AD00F47377 /* Find ADA Locker.app */;
+			productType = "com.apple.product-type.application";
+		};
+		7A8172F6233251AF00F47377 /* Find ADA LockerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7A81730E233251AF00F47377 /* Build configuration list for PBXNativeTarget "Find ADA LockerTests" */;
+			buildPhases = (
+				7A8172F3233251AF00F47377 /* Sources */,
+				7A8172F4233251AF00F47377 /* Frameworks */,
+				7A8172F5233251AF00F47377 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7A8172F9233251AF00F47377 /* PBXTargetDependency */,
+			);
+			name = "Find ADA LockerTests";
+			productName = "Find ADA LockerTests";
+			productReference = 7A8172F7233251AF00F47377 /* Find ADA LockerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		7A817301233251AF00F47377 /* Find ADA LockerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7A817311233251AF00F47377 /* Build configuration list for PBXNativeTarget "Find ADA LockerUITests" */;
+			buildPhases = (
+				7A8172FE233251AF00F47377 /* Sources */,
+				7A8172FF233251AF00F47377 /* Frameworks */,
+				7A817300233251AF00F47377 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7A817304233251AF00F47377 /* PBXTargetDependency */,
+			);
+			name = "Find ADA LockerUITests";
+			productName = "Find ADA LockerUITests";
+			productReference = 7A817302233251AF00F47377 /* Find ADA LockerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7A8172D8233251AD00F47377 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1030;
+				LastUpgradeCheck = 1030;
+				ORGANIZATIONNAME = "William Santoso";
+				TargetAttributes = {
+					7A8172DF233251AD00F47377 = {
+						CreatedOnToolsVersion = 10.3;
+					};
+					7A8172F6233251AF00F47377 = {
+						CreatedOnToolsVersion = 10.3;
+						TestTargetID = 7A8172DF233251AD00F47377;
+					};
+					7A817301233251AF00F47377 = {
+						CreatedOnToolsVersion = 10.3;
+						TestTargetID = 7A8172DF233251AD00F47377;
+					};
+				};
+			};
+			buildConfigurationList = 7A8172DB233251AD00F47377 /* Build configuration list for PBXProject "Find ADA Locker" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7A8172D7233251AD00F47377;
+			productRefGroup = 7A8172E1233251AD00F47377 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7A8172DF233251AD00F47377 /* Find ADA Locker */,
+				7A8172F6233251AF00F47377 /* Find ADA LockerTests */,
+				7A817301233251AF00F47377 /* Find ADA LockerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7A8172DE233251AD00F47377 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7A8172F1233251AE00F47377 /* LaunchScreen.storyboard in Resources */,
+				7A8172EE233251AE00F47377 /* Assets.xcassets in Resources */,
+				7A8172E9233251AD00F47377 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7A8172F5233251AF00F47377 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7A817300233251AF00F47377 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7A8172DC233251AD00F47377 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7A8172EC233251AD00F47377 /* Find_ADA_Locker.xcdatamodeld in Sources */,
+				7A8172E6233251AD00F47377 /* ViewController.swift in Sources */,
+				7A8172E4233251AD00F47377 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7A8172F3233251AF00F47377 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7A8172FC233251AF00F47377 /* Find_ADA_LockerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7A8172FE233251AF00F47377 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7A817307233251AF00F47377 /* Find_ADA_LockerUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7A8172F9233251AF00F47377 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7A8172DF233251AD00F47377 /* Find ADA Locker */;
+			targetProxy = 7A8172F8233251AF00F47377 /* PBXContainerItemProxy */;
+		};
+		7A817304233251AF00F47377 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7A8172DF233251AD00F47377 /* Find ADA Locker */;
+			targetProxy = 7A817303233251AF00F47377 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		7A8172E7233251AD00F47377 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7A8172E8233251AD00F47377 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		7A8172EF233251AE00F47377 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7A8172F0233251AE00F47377 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7A817309233251AF00F47377 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		7A81730A233251AF00F47377 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7A81730C233251AF00F47377 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 497N7524MA;
+				INFOPLIST_FILE = "Find ADA Locker/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.williamsantoso.Find-ADA-Locker";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7A81730D233251AF00F47377 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 497N7524MA;
+				INFOPLIST_FILE = "Find ADA Locker/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.williamsantoso.Find-ADA-Locker";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		7A81730F233251AF00F47377 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 497N7524MA;
+				INFOPLIST_FILE = "Find ADA LockerTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.williamsantoso.Find-ADA-LockerTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Find ADA Locker.app/Find ADA Locker";
+			};
+			name = Debug;
+		};
+		7A817310233251AF00F47377 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 497N7524MA;
+				INFOPLIST_FILE = "Find ADA LockerTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.williamsantoso.Find-ADA-LockerTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Find ADA Locker.app/Find ADA Locker";
+			};
+			name = Release;
+		};
+		7A817312233251AF00F47377 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 497N7524MA;
+				INFOPLIST_FILE = "Find ADA LockerUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.williamsantoso.Find-ADA-LockerUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Find ADA Locker";
+			};
+			name = Debug;
+		};
+		7A817313233251AF00F47377 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 497N7524MA;
+				INFOPLIST_FILE = "Find ADA LockerUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.williamsantoso.Find-ADA-LockerUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Find ADA Locker";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7A8172DB233251AD00F47377 /* Build configuration list for PBXProject "Find ADA Locker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7A817309233251AF00F47377 /* Debug */,
+				7A81730A233251AF00F47377 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7A81730B233251AF00F47377 /* Build configuration list for PBXNativeTarget "Find ADA Locker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7A81730C233251AF00F47377 /* Debug */,
+				7A81730D233251AF00F47377 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7A81730E233251AF00F47377 /* Build configuration list for PBXNativeTarget "Find ADA LockerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7A81730F233251AF00F47377 /* Debug */,
+				7A817310233251AF00F47377 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7A817311233251AF00F47377 /* Build configuration list for PBXNativeTarget "Find ADA LockerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7A817312233251AF00F47377 /* Debug */,
+				7A817313233251AF00F47377 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		7A8172EA233251AD00F47377 /* Find_ADA_Locker.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				7A8172EB233251AD00F47377 /* Find_ADA_Locker.xcdatamodel */,
+			);
+			currentVersion = 7A8172EB233251AD00F47377 /* Find_ADA_Locker.xcdatamodel */;
+			path = Find_ADA_Locker.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 7A8172D8233251AD00F47377 /* Project object */;
+}
