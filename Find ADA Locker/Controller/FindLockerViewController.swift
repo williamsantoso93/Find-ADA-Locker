@@ -8,13 +8,18 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class FindLockerViewController: UIViewController {
 
+    @IBOutlet weak var findLockerButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
 
-
+    @IBAction func findLockerButtonDidTap(_ sender: Any) {
+        
+    }
+    
 }
 

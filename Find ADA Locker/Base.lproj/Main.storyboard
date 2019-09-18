@@ -1,24 +1,177 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="uZt-PS-M76">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Find Locker-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="FindLockerViewController" customModule="Find_ADA_Locker" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="756"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MtC-zl-8LO">
+                                <rect key="frame" x="107" y="278" width="200" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="5vz-kJ-fhQ"/>
+                                    <constraint firstAttribute="height" constant="200" id="ob0-pe-XSY"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="34"/>
+                                <state key="normal" title="Find Locker">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="findLockerButtonDidTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="iy3-go-pso"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="MtC-zl-8LO" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="d9u-eX-HFG"/>
+                            <constraint firstItem="MtC-zl-8LO" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="ujb-WH-d57"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <navigationItem key="navigationItem" title="Find Locker" id="rzM-nH-9kL">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="eY5-16-Tau"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="findLockerButton" destination="MtC-zl-8LO" id="cqx-wa-qWP"/>
+                        <segue destination="Qol-3B-i8H" kind="show" identifier="ChooseZone" id="G1O-CE-pIG"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1047.8260869565217" y="137.94642857142856"/>
+        </scene>
+        <!--Choose Zone-->
+        <scene sceneID="oQW-7Y-l3m">
+            <objects>
+                <viewController id="Qol-3B-i8H" customClass="ChooseZoneViewController" customModule="Find_ADA_Locker" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Nkz-wJ-pnM">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="756"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="7dp-cu-KEk">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="722"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="8ZU-pt-dwX">
+                                    <size key="itemSize" width="50" height="50"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="PQV-Ue-ft8">
+                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </view>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="7dp-cu-KEk" firstAttribute="top" secondItem="ygu-CZ-F4m" secondAttribute="top" id="DDX-VQ-1HG"/>
+                            <constraint firstItem="ygu-CZ-F4m" firstAttribute="bottom" secondItem="7dp-cu-KEk" secondAttribute="bottom" id="Oqq-x3-hFb"/>
+                            <constraint firstItem="7dp-cu-KEk" firstAttribute="leading" secondItem="ygu-CZ-F4m" secondAttribute="leading" id="oyb-oU-vTT"/>
+                            <constraint firstItem="ygu-CZ-F4m" firstAttribute="trailing" secondItem="7dp-cu-KEk" secondAttribute="trailing" id="why-CQ-CpD"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="ygu-CZ-F4m"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Choose Zone" id="bjn-pX-QXr"/>
+                    <connections>
+                        <outlet property="chooseZoneCollectionView" destination="7dp-cu-KEk" id="frJ-69-mzv"/>
+                        <segue destination="N4H-1E-5K9" kind="show" identifier="ChooseLocker" id="wTb-5k-qOg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="q2p-TB-Wfv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1988" y="138"/>
+        </scene>
+        <!--Choose Locker-->
+        <scene sceneID="Lv8-xP-80s">
+            <objects>
+                <viewController id="N4H-1E-5K9" customClass="ChooseLockerViewController" customModule="Find_ADA_Locker" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Xov-cC-zac">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="756"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="1QM-9e-VFl">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="722"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="hJj-VV-KxO">
+                                    <size key="itemSize" width="50" height="50"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="xWp-Ic-9lk">
+                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </view>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="1QM-9e-VFl" firstAttribute="leading" secondItem="b9c-Dk-MzJ" secondAttribute="leading" id="MmQ-f8-xz1"/>
+                            <constraint firstItem="b9c-Dk-MzJ" firstAttribute="bottom" secondItem="1QM-9e-VFl" secondAttribute="bottom" id="WiZ-Oj-EWt"/>
+                            <constraint firstItem="1QM-9e-VFl" firstAttribute="top" secondItem="b9c-Dk-MzJ" secondAttribute="top" id="oGB-l1-knU"/>
+                            <constraint firstItem="b9c-Dk-MzJ" firstAttribute="trailing" secondItem="1QM-9e-VFl" secondAttribute="trailing" id="r5C-ep-CzI"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="b9c-Dk-MzJ"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Choose Locker" id="4Gl-yV-FMz"/>
+                    <connections>
+                        <outlet property="chooseLockerCollectionView" destination="1QM-9e-VFl" id="gNJ-sI-B7Q"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9Ge-Uz-dzx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2914" y="138"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="GT2-5U-dPj">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="uZt-PS-M76" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" largeTitles="YES" id="QPh-bP-XXM">
+                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="barTintColor" red="0.19669950008392334" green="0.51306736469268799" blue="0.54902762174606323" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
+                        <textAttributes key="largeTitleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="0KH-Kz-KrC"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ctp-kN-TU8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="99" y="138"/>
         </scene>
     </scenes>
 </document>

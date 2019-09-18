@@ -8,13 +8,19 @@
 
 /* Begin PBXBuildFile section */
 		7A8172E4233251AD00F47377 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A8172E3233251AD00F47377 /* AppDelegate.swift */; };
-		7A8172E6233251AD00F47377 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A8172E5233251AD00F47377 /* ViewController.swift */; };
+		7A8172E6233251AD00F47377 /* FindLockerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A8172E5233251AD00F47377 /* FindLockerViewController.swift */; };
 		7A8172E9233251AD00F47377 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7A8172E7233251AD00F47377 /* Main.storyboard */; };
 		7A8172EC233251AD00F47377 /* Find_ADA_Locker.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7A8172EA233251AD00F47377 /* Find_ADA_Locker.xcdatamodeld */; };
 		7A8172EE233251AE00F47377 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7A8172ED233251AE00F47377 /* Assets.xcassets */; };
 		7A8172F1233251AE00F47377 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7A8172EF233251AE00F47377 /* LaunchScreen.storyboard */; };
 		7A8172FC233251AF00F47377 /* Find_ADA_LockerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A8172FB233251AF00F47377 /* Find_ADA_LockerTests.swift */; };
 		7A817307233251AF00F47377 /* Find_ADA_LockerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A817306233251AF00F47377 /* Find_ADA_LockerUITests.swift */; };
+		7A817316233258FE00F47377 /* ChooseZoneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A817315233258FE00F47377 /* ChooseZoneViewController.swift */; };
+		7A8173182332590D00F47377 /* ChooseLockerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A8173172332590D00F47377 /* ChooseLockerViewController.swift */; };
+		7A81731F23325AC400F47377 /* ChooseZoneCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A81731D23325AC400F47377 /* ChooseZoneCollectionViewCell.swift */; };
+		7A81732023325AC400F47377 /* ChooseZoneCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7A81731E23325AC400F47377 /* ChooseZoneCollectionViewCell.xib */; };
+		7A81732323325AD700F47377 /* ChooseLockerCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A81732123325AD700F47377 /* ChooseLockerCollectionViewCell.swift */; };
+		7A81732423325AD700F47377 /* ChooseLockerCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7A81732223325AD700F47377 /* ChooseLockerCollectionViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,7 +43,7 @@
 /* Begin PBXFileReference section */
 		7A8172E0233251AD00F47377 /* Find ADA Locker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Find ADA Locker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7A8172E3233251AD00F47377 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		7A8172E5233251AD00F47377 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		7A8172E5233251AD00F47377 /* FindLockerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindLockerViewController.swift; sourceTree = "<group>"; };
 		7A8172E8233251AD00F47377 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7A8172EB233251AD00F47377 /* Find_ADA_Locker.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Find_ADA_Locker.xcdatamodel; sourceTree = "<group>"; };
 		7A8172ED233251AE00F47377 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -49,6 +55,12 @@
 		7A817302233251AF00F47377 /* Find ADA LockerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Find ADA LockerUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7A817306233251AF00F47377 /* Find_ADA_LockerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Find_ADA_LockerUITests.swift; sourceTree = "<group>"; };
 		7A817308233251AF00F47377 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7A817315233258FE00F47377 /* ChooseZoneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseZoneViewController.swift; sourceTree = "<group>"; };
+		7A8173172332590D00F47377 /* ChooseLockerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseLockerViewController.swift; sourceTree = "<group>"; };
+		7A81731D23325AC400F47377 /* ChooseZoneCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseZoneCollectionViewCell.swift; sourceTree = "<group>"; };
+		7A81731E23325AC400F47377 /* ChooseZoneCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChooseZoneCollectionViewCell.xib; sourceTree = "<group>"; };
+		7A81732123325AD700F47377 /* ChooseLockerCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseLockerCollectionViewCell.swift; sourceTree = "<group>"; };
+		7A81732223325AD700F47377 /* ChooseLockerCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChooseLockerCollectionViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,7 +112,8 @@
 			isa = PBXGroup;
 			children = (
 				7A8172E3233251AD00F47377 /* AppDelegate.swift */,
-				7A8172E5233251AD00F47377 /* ViewController.swift */,
+				7A81731923325A5E00F47377 /* Collection View Cell */,
+				7A817314233251F800F47377 /* Controller */,
 				7A8172E7233251AD00F47377 /* Main.storyboard */,
 				7A8172ED233251AE00F47377 /* Assets.xcassets */,
 				7A8172EF233251AE00F47377 /* LaunchScreen.storyboard */,
@@ -126,6 +139,27 @@
 				7A817308233251AF00F47377 /* Info.plist */,
 			);
 			path = "Find ADA LockerUITests";
+			sourceTree = "<group>";
+		};
+		7A817314233251F800F47377 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				7A8172E5233251AD00F47377 /* FindLockerViewController.swift */,
+				7A817315233258FE00F47377 /* ChooseZoneViewController.swift */,
+				7A8173172332590D00F47377 /* ChooseLockerViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		7A81731923325A5E00F47377 /* Collection View Cell */ = {
+			isa = PBXGroup;
+			children = (
+				7A81731D23325AC400F47377 /* ChooseZoneCollectionViewCell.swift */,
+				7A81731E23325AC400F47377 /* ChooseZoneCollectionViewCell.xib */,
+				7A81732123325AD700F47377 /* ChooseLockerCollectionViewCell.swift */,
+				7A81732223325AD700F47377 /* ChooseLockerCollectionViewCell.xib */,
+			);
+			path = "Collection View Cell";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -234,7 +268,9 @@
 			files = (
 				7A8172F1233251AE00F47377 /* LaunchScreen.storyboard in Resources */,
 				7A8172EE233251AE00F47377 /* Assets.xcassets in Resources */,
+				7A81732023325AC400F47377 /* ChooseZoneCollectionViewCell.xib in Resources */,
 				7A8172E9233251AD00F47377 /* Main.storyboard in Resources */,
+				7A81732423325AD700F47377 /* ChooseLockerCollectionViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,9 +295,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7A8173182332590D00F47377 /* ChooseLockerViewController.swift in Sources */,
 				7A8172EC233251AD00F47377 /* Find_ADA_Locker.xcdatamodeld in Sources */,
-				7A8172E6233251AD00F47377 /* ViewController.swift in Sources */,
+				7A817316233258FE00F47377 /* ChooseZoneViewController.swift in Sources */,
+				7A8172E6233251AD00F47377 /* FindLockerViewController.swift in Sources */,
 				7A8172E4233251AD00F47377 /* AppDelegate.swift in Sources */,
+				7A81732323325AD700F47377 /* ChooseLockerCollectionViewCell.swift in Sources */,
+				7A81731F23325AC400F47377 /* ChooseZoneCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
