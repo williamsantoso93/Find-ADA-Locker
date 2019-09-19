@@ -21,6 +21,8 @@
 		7A81732023325AC400F47377 /* ChooseZoneCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7A81731E23325AC400F47377 /* ChooseZoneCollectionViewCell.xib */; };
 		7A81732323325AD700F47377 /* ChooseLockerCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A81732123325AD700F47377 /* ChooseLockerCollectionViewCell.swift */; };
 		7A81732423325AD700F47377 /* ChooseLockerCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7A81732223325AD700F47377 /* ChooseLockerCollectionViewCell.xib */; };
+		7A8173262332892200F47377 /* Extention.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A8173252332892200F47377 /* Extention.swift */; };
+		7A81732823328A6E00F47377 /* Modal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A81732723328A6E00F47377 /* Modal.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +63,8 @@
 		7A81731E23325AC400F47377 /* ChooseZoneCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChooseZoneCollectionViewCell.xib; sourceTree = "<group>"; };
 		7A81732123325AD700F47377 /* ChooseLockerCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseLockerCollectionViewCell.swift; sourceTree = "<group>"; };
 		7A81732223325AD700F47377 /* ChooseLockerCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChooseLockerCollectionViewCell.xib; sourceTree = "<group>"; };
+		7A8173252332892200F47377 /* Extention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extention.swift; sourceTree = "<group>"; };
+		7A81732723328A6E00F47377 /* Modal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Modal.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +116,8 @@
 			isa = PBXGroup;
 			children = (
 				7A8172E3233251AD00F47377 /* AppDelegate.swift */,
+				7A8173252332892200F47377 /* Extention.swift */,
+				7A81732723328A6E00F47377 /* Modal.swift */,
 				7A81731923325A5E00F47377 /* Collection View Cell */,
 				7A817314233251F800F47377 /* Controller */,
 				7A8172E7233251AD00F47377 /* Main.storyboard */,
@@ -295,12 +301,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7A8173262332892200F47377 /* Extention.swift in Sources */,
 				7A8173182332590D00F47377 /* ChooseLockerViewController.swift in Sources */,
 				7A8172EC233251AD00F47377 /* Find_ADA_Locker.xcdatamodeld in Sources */,
 				7A817316233258FE00F47377 /* ChooseZoneViewController.swift in Sources */,
 				7A8172E6233251AD00F47377 /* FindLockerViewController.swift in Sources */,
 				7A8172E4233251AD00F47377 /* AppDelegate.swift in Sources */,
 				7A81732323325AD700F47377 /* ChooseLockerCollectionViewCell.swift in Sources */,
+				7A81732823328A6E00F47377 /* Modal.swift in Sources */,
 				7A81731F23325AC400F47377 /* ChooseZoneCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

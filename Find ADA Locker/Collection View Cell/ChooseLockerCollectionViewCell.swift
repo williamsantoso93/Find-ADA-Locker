@@ -10,6 +10,8 @@ import UIKit
 
 class ChooseLockerCollectionViewCell: UICollectionViewCell {
 
+    @IBOutlet weak var lockerNumberLabel: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

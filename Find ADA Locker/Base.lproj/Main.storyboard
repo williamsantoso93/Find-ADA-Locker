@@ -32,10 +32,18 @@
                                     <action selector="findLockerButtonDidTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="iy3-go-pso"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.0" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="euT-kR-7Gh">
+                                <rect key="frame" x="181" y="234" width="52" height="24"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.94901960784313721" green="0.88627450980392153" blue="0.80784313725490198" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
+                            <constraint firstItem="euT-kR-7Gh" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="5cx-kD-SCV"/>
                             <constraint firstItem="MtC-zl-8LO" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="d9u-eX-HFG"/>
+                            <constraint firstItem="MtC-zl-8LO" firstAttribute="top" secondItem="euT-kR-7Gh" secondAttribute="bottom" constant="20" id="rqY-J6-Ut0"/>
                             <constraint firstItem="MtC-zl-8LO" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="ujb-WH-d57"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -44,7 +52,7 @@
                         <barButtonItem key="backBarButtonItem" title="Back" id="eY5-16-Tau"/>
                     </navigationItem>
                     <connections>
-                        <outlet property="findLockerButton" destination="MtC-zl-8LO" id="cqx-wa-qWP"/>
+                        <outlet property="findLockerButton" destination="MtC-zl-8LO" id="Ouu-KC-dTn"/>
                         <segue destination="Qol-3B-i8H" kind="show" identifier="ChooseZone" id="G1O-CE-pIG"/>
                     </connections>
                 </viewController>
@@ -62,26 +70,31 @@
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="7dp-cu-KEk">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="722"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" red="0.94901960780000005" green="0.8862745098" blue="0.80784313730000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <inset key="scrollIndicatorInsets" minX="20" minY="60" maxX="20" maxY="60"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="8ZU-pt-dwX">
-                                    <size key="itemSize" width="50" height="50"/>
+                                    <size key="itemSize" width="374" height="105"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                    <inset key="sectionInset" minX="20" minY="60" maxX="20" maxY="60"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="PQV-Ue-ft8">
-                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="aiO-8J-j0T">
+                                        <rect key="frame" x="20" y="60" width="374" height="105"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
-                                            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="374" height="105"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </view>
                                     </collectionViewCell>
                                 </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="Qol-3B-i8H" id="b3o-5F-mhc"/>
+                                    <outlet property="delegate" destination="Qol-3B-i8H" id="UNs-Ey-s85"/>
+                                </connections>
                             </collectionView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" red="0.94901960784313721" green="0.88627450980392153" blue="0.80784313725490198" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="7dp-cu-KEk" firstAttribute="top" secondItem="ygu-CZ-F4m" secondAttribute="top" id="DDX-VQ-1HG"/>
                             <constraint firstItem="ygu-CZ-F4m" firstAttribute="bottom" secondItem="7dp-cu-KEk" secondAttribute="bottom" id="Oqq-x3-hFb"/>
@@ -98,7 +111,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="q2p-TB-Wfv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1988" y="138"/>
+            <point key="canvasLocation" x="1986.9565217391305" y="137.94642857142856"/>
         </scene>
         <!--Choose Locker-->
         <scene sceneID="Lv8-xP-80s">
@@ -108,28 +121,33 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="756"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="1QM-9e-VFl">
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" semanticContentAttribute="forceLeftToRight" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="1QM-9e-VFl">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="722"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="hJj-VV-KxO">
-                                    <size key="itemSize" width="50" height="50"/>
+                                <color key="backgroundColor" red="0.94901960780000005" green="0.8862745098" blue="0.80784313730000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <inset key="scrollIndicatorInsets" minX="20" minY="50" maxX="20" maxY="0.0"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="18" minimumInteritemSpacing="18" id="hJj-VV-KxO">
+                                    <size key="itemSize" width="150" height="200"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                    <inset key="sectionInset" minX="20" minY="58" maxX="20" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="xWp-Ic-9lk">
-                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="mod-O8-Rgw">
+                                        <rect key="frame" x="20" y="58" width="150" height="200"/>
+                                        <autoresizingMask key="autoresizingMask"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
-                                            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="150" height="200"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </view>
                                     </collectionViewCell>
                                 </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="N4H-1E-5K9" id="dfv-Ei-gAE"/>
+                                    <outlet property="delegate" destination="N4H-1E-5K9" id="zQq-2h-kBd"/>
+                                </connections>
                             </collectionView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" red="0.94901960780000005" green="0.8862745098" blue="0.80784313730000001" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="1QM-9e-VFl" firstAttribute="leading" secondItem="b9c-Dk-MzJ" secondAttribute="leading" id="MmQ-f8-xz1"/>
                             <constraint firstItem="b9c-Dk-MzJ" firstAttribute="bottom" secondItem="1QM-9e-VFl" secondAttribute="bottom" id="WiZ-Oj-EWt"/>
