@@ -65,6 +65,7 @@
 		7A81732223325AD700F47377 /* ChooseLockerCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChooseLockerCollectionViewCell.xib; sourceTree = "<group>"; };
 		7A8173252332892200F47377 /* Extention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extention.swift; sourceTree = "<group>"; };
 		7A81732723328A6E00F47377 /* Modal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Modal.swift; sourceTree = "<group>"; };
+		7AB3D0362333756A00759727 /* Find ADA Locker.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Find ADA Locker.entitlements"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +116,7 @@
 		7A8172E2233251AD00F47377 /* Find ADA Locker */ = {
 			isa = PBXGroup;
 			children = (
+				7AB3D0362333756A00759727 /* Find ADA Locker.entitlements */,
 				7A8172E3233251AD00F47377 /* AppDelegate.swift */,
 				7A8173252332892200F47377 /* Extention.swift */,
 				7A81732723328A6E00F47377 /* Modal.swift */,
@@ -236,6 +238,11 @@
 				TargetAttributes = {
 					7A8172DF233251AD00F47377 = {
 						CreatedOnToolsVersion = 10.3;
+						SystemCapabilities = {
+							com.apple.AccessWiFi = {
+								enabled = 1;
+							};
+						};
 					};
 					7A8172F6233251AF00F47377 = {
 						CreatedOnToolsVersion = 10.3;
@@ -484,6 +491,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Find ADA Locker/Find ADA Locker.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 497N7524MA;
 				INFOPLIST_FILE = "Find ADA Locker/Info.plist";
@@ -502,6 +510,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Find ADA Locker/Find ADA Locker.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 497N7524MA;
 				INFOPLIST_FILE = "Find ADA Locker/Info.plist";

@@ -10,7 +10,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Find Locker-->
+        <!--Your Locker-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="FindLockerViewController" customModule="Find_ADA_Locker" customModuleProvider="target" sceneMemberID="viewController">
@@ -21,7 +21,7 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MtC-zl-8LO">
                                 <rect key="frame" x="107" y="278" width="200" height="200"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="200" id="5vz-kJ-fhQ"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="200" id="5vz-kJ-fhQ"/>
                                     <constraint firstAttribute="height" constant="200" id="ob0-pe-XSY"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="34"/>
@@ -38,21 +38,32 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.0" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="99" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Yr-kW-dce">
+                                <rect key="frame" x="260" y="298" width="37" height="34"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="28"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.94901960784313721" green="0.88627450980392153" blue="0.80784313725490198" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="euT-kR-7Gh" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="5cx-kD-SCV"/>
+                            <constraint firstItem="0Yr-kW-dce" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="leading" symbolic="YES" id="V7x-py-Lgv"/>
+                            <constraint firstItem="0Yr-kW-dce" firstAttribute="trailing" secondItem="MtC-zl-8LO" secondAttribute="trailing" constant="-10" id="cbS-ql-1pS"/>
                             <constraint firstItem="MtC-zl-8LO" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="d9u-eX-HFG"/>
+                            <constraint firstItem="0Yr-kW-dce" firstAttribute="top" secondItem="MtC-zl-8LO" secondAttribute="top" constant="20" id="lIL-db-CAa"/>
                             <constraint firstItem="MtC-zl-8LO" firstAttribute="top" secondItem="euT-kR-7Gh" secondAttribute="bottom" constant="20" id="rqY-J6-Ut0"/>
                             <constraint firstItem="MtC-zl-8LO" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="ujb-WH-d57"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Find Locker" id="rzM-nH-9kL">
+                    <navigationItem key="navigationItem" title="Your Locker" id="rzM-nH-9kL">
                         <barButtonItem key="backBarButtonItem" title="Back" id="eY5-16-Tau"/>
                     </navigationItem>
                     <connections>
                         <outlet property="findLockerButton" destination="MtC-zl-8LO" id="Ouu-KC-dTn"/>
+                        <outlet property="lockerNumberLabel" destination="0Yr-kW-dce" id="6aV-DF-LQa"/>
+                        <outlet property="zoneLabel" destination="euT-kR-7Gh" id="tkz-Ml-F17"/>
                         <segue destination="Qol-3B-i8H" kind="show" identifier="ChooseZone" id="G1O-CE-pIG"/>
                     </connections>
                 </viewController>
@@ -129,7 +140,7 @@
                                     <size key="itemSize" width="150" height="200"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                                    <inset key="sectionInset" minX="20" minY="58" maxX="20" maxY="0.0"/>
+                                    <inset key="sectionInset" minX="20" minY="58" maxX="20" maxY="10"/>
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="mod-O8-Rgw">

@@ -11,10 +11,12 @@ import UIKit
 class ChooseLockerCollectionViewCell: UICollectionViewCell {
 
     @IBOutlet weak var lockerNumberLabel: UILabel!
+    @IBOutlet weak var frontView: UIView!
     
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
+        frontView.layer.cornerRadius = 8
     }
 
 }

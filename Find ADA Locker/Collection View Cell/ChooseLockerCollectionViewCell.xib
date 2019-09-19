@@ -32,24 +32,47 @@
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
+                    <view alpha="0.0" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="olx-OT-Nt4">
+                        <rect key="frame" x="0.0" y="0.0" width="150" height="200"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Lock" translatesAutoresizingMaskIntoConstraints="NO" id="MmE-YH-DnK">
+                                <rect key="frame" x="29" y="43" width="92" height="114"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="114" id="f5M-Yp-iDj"/>
+                                    <constraint firstAttribute="width" constant="92" id="owF-jk-8nr"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.75" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="MmE-YH-DnK" firstAttribute="centerX" secondItem="olx-OT-Nt4" secondAttribute="centerX" id="WJa-1R-eGR"/>
+                            <constraint firstItem="MmE-YH-DnK" firstAttribute="centerY" secondItem="olx-OT-Nt4" secondAttribute="centerY" id="goh-iq-XDh"/>
+                        </constraints>
+                    </view>
                 </subviews>
             </view>
             <constraints>
                 <constraint firstItem="u0w-6c-TSH" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="2B3-GP-iSn"/>
+                <constraint firstAttribute="bottom" secondItem="olx-OT-Nt4" secondAttribute="bottom" id="4P4-zY-HNY"/>
+                <constraint firstItem="olx-OT-Nt4" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="55j-u4-SlZ"/>
                 <constraint firstAttribute="trailing" secondItem="u0w-6c-TSH" secondAttribute="trailing" id="LoT-pV-MdT"/>
                 <constraint firstAttribute="bottom" secondItem="u0w-6c-TSH" secondAttribute="bottom" id="Vph-l0-kdd"/>
                 <constraint firstItem="esf-KB-gr2" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="20" id="b5o-eU-qrW"/>
                 <constraint firstItem="u0w-6c-TSH" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="f2b-4r-12W"/>
+                <constraint firstItem="olx-OT-Nt4" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="fTV-Uq-w3g"/>
                 <constraint firstAttribute="trailing" secondItem="esf-KB-gr2" secondAttribute="trailing" constant="10" id="jKT-yH-IEb"/>
+                <constraint firstAttribute="trailing" secondItem="olx-OT-Nt4" secondAttribute="trailing" id="qYB-bP-I9d"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
             <connections>
+                <outlet property="frontView" destination="olx-OT-Nt4" id="iQi-2o-Q2q"/>
                 <outlet property="lockerNumberLabel" destination="esf-KB-gr2" id="jnA-sc-3Jv"/>
             </connections>
             <point key="canvasLocation" x="137.68115942028987" y="152.67857142857142"/>
         </collectionViewCell>
     </objects>
     <resources>
+        <image name="Lock" width="92" height="114"/>
         <image name="Locker" width="150" height="200"/>
     </resources>
 </document>
