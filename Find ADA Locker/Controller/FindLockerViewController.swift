@@ -65,7 +65,8 @@ class FindLockerViewController: UIViewController {
             switch self.locker.ownership {
             case "finding":
                 self.findLockerButton.setTitle("Find Locker", for: .normal)
-                self.findLockerButton.setBackgroundImage(UIImage(), for: .normal)
+                self.findLockerButton.setImage(UIImage(), for: .normal)
+//                self.findLockerButton.setBackgroundImage(UIImage(), for: .normal)
                 self.findLockerButton.fullRound()
                 self.zoneLabel.alpha = 0
                 self.lockerNumberLabel.alpha = 0
@@ -75,7 +76,8 @@ class FindLockerViewController: UIViewController {
                 self.lockerNumberLabel.text = "\(self.locker.lockerNumber)"
                 self.lockerNumberLabel.alpha = 1
                 self.findLockerButton.setTitle("", for: .normal)
-                self.findLockerButton.setBackgroundImage(#imageLiteral(resourceName: "Locker"), for: .normal)
+//                self.findLockerButton.setBackgroundImage(#imageLiteral(resourceName: "Locker"), for: .normal)
+                self.findLockerButton.setImage(#imageLiteral(resourceName: "Locker"), for: .normal)
                 self.findLockerButton.layer.borderWidth = 0
             default:
                 break

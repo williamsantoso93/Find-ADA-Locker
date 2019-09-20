@@ -73,6 +73,8 @@ extension ChooseLockerViewController: UICollectionViewDelegate, UICollectionView
         let taken = userDef.string(forKey: "zone\(zoneString[index])Locker\(lockerNumber)")
         if taken == "taken" {
             cell.frontView.alpha = 1
+        }else{
+            cell.frontView.alpha = 0
         }
         
         cell.lockerNumberLabel.text = String(format: "%02d", lockerNumber)
@@ -82,7 +84,7 @@ extension ChooseLockerViewController: UICollectionViewDelegate, UICollectionView
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         lockerNumber = lockerNumbers[indexPath.row] //indexPath.row + 1
         let lockerNumberString: String =  String(format: "%02d", lockerNumbers[indexPath.row])
-        let taken = userDef.string(forKey: "zone\(zoneString[index])Locker\(lockerNumberString)")
+        let taken = userDef.string(forKey: "zone\(zoneString[index])Locker\(lockerNumbers[indexPath.row])")
         if taken == "taken" {
             let alertChoose = UIAlertController(title: "Locker", message: "Locker \(lockerNumberString) in \(zone.rawValue) has been taken", preferredStyle: .alert)
             
@@ -100,7 +102,7 @@ extension ChooseLockerViewController: UICollectionViewDelegate, UICollectionView
                 
             }
             let chooseAction = UIAlertAction(title: "Choose", style: .default) { (_) in
-                let randomPasscode = Int.random(in: 0...99999)
+                let randomPasscode = Int.random(in: 0...999999)
                 let passcodeString: String = String(format: "%06d", randomPasscode)
                 let alertViewCode = UIAlertController(title: "Code", message: passcodeString, preferredStyle: .alert)
                 
