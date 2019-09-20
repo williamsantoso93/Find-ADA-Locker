@@ -242,6 +242,9 @@
 							com.apple.AccessWiFi = {
 								enabled = 1;
 							};
+							com.apple.iCloud = {
+								enabled = 0;
+							};
 						};
 					};
 					7A8172F6233251AF00F47377 = {

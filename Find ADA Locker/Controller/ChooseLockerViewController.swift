@@ -26,6 +26,7 @@ class ChooseLockerViewController: UIViewController {
     var zoneString: [String] = ["A", "B", "C", "D"]
     
     let userDef = UserDefaults.standard
+    var lockerNumbers: [Int] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -49,12 +50,25 @@ extension ChooseLockerViewController: UICollectionViewDelegate, UICollectionView
         case .zoneD:
             totalLocker = 45
         }
+        
+        var index: Int = 0
+        let maxColoum: Int = totalLocker / 3
+        
+        for i in 0...(totalLocker - 1) {
+            let number = ((i / 3) + 1) + (maxColoum * index)
+            lockerNumbers.insert(number, at: i)
+            index += 1
+            if index == 3 {
+                index = 0
+            }
+        }
+        
         return totalLocker
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = chooseLockerCollectionView.dequeueReusableCell(withReuseIdentifier: "ChooseLockerCollectionViewCell", for: indexPath) as! ChooseLockerCollectionViewCell
-        let lockerNumber: Int = indexPath.row + 1
+        let lockerNumber: Int = lockerNumbers[indexPath.row]
         
         let taken = userDef.string(forKey: "zone\(zoneString[index])Locker\(lockerNumber)")
         if taken == "taken" {
@@ -66,11 +80,11 @@ extension ChooseLockerViewController: UICollectionViewDelegate, UICollectionView
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        lockerNumber = indexPath.row + 1
-        
-        let taken = userDef.string(forKey: "zone\(zoneString[index])Locker\(lockerNumber)")
+        lockerNumber = lockerNumbers[indexPath.row] //indexPath.row + 1
+        let lockerNumberString: String =  String(format: "%02d", lockerNumbers[indexPath.row])
+        let taken = userDef.string(forKey: "zone\(zoneString[index])Locker\(lockerNumberString)")
         if taken == "taken" {
-            let alertChoose = UIAlertController(title: "Locker", message: "Locker \(lockerNumber) in \(zone.rawValue) has been taken", preferredStyle: .alert)
+            let alertChoose = UIAlertController(title: "Locker", message: "Locker \(lockerNumberString) in \(zone.rawValue) has been taken", preferredStyle: .alert)
             
             let cancelAction = UIAlertAction(title: "dismiss", style: .cancel) { (_) in
                 
