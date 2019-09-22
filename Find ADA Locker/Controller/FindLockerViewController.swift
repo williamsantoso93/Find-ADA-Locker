@@ -40,7 +40,7 @@ class FindLockerViewController: UIViewController {
     
     func loadDummyData() {
         var isDummyData = userDef.bool(forKey: "isDummyData")
-        print(isDummyData)
+//        print(isDummyData)
         if !isDummyData {
             isDummyData = true
             self.userDef.set(isDummyData, forKey: "isDummyData")
@@ -51,7 +51,7 @@ class FindLockerViewController: UIViewController {
                 for _ in 0...(totalLocker[i] - 1) {
                     let random: Int = Int.random(in: 1...totalLocker[i])
                     let key: String = "zone\(zone[i])Locker\(random)"
-                    print(key)
+//                    print(key)
                     
                     self.userDef.set("taken", forKey: key)
                 }
@@ -192,29 +192,29 @@ class FindLockerViewController: UIViewController {
         locker.lockerNumber = userLockerNumber
         locker.lockerCode = userLockerCode
         
-        print(userOwnership)
-        print(userZone)
-        print(userLockerNumber)
-        print(userLockerCode)
+//        print(userOwnership)
+//        print(userZone)
+//        print(userLockerNumber)
+//        print(userLockerCode)
     }
     
 
     @IBAction func findLockerButtonDidTap(_ sender: Any) {
-        let wifiSSID: String = fetchSSIDInfo()
-        if wifiSSID == "iosda-training" {
-            touchIdAction()
-        } else {
-            let alertViewCode = UIAlertController(title: "Friend", message: "Your are not connected to iosda-training wifi", preferredStyle: .alert)
-            
-            let dismissAction = UIAlertAction(title: "Dismiss", style: .default, handler: { (_) in
-                
-            })
-            
-            alertViewCode.addAction(dismissAction)
-            
-            self.present(alertViewCode, animated: true, completion: nil)
-            
-        }
+//        let wifiSSID: String = fetchSSIDInfo()
+//        if wifiSSID == "iosda-training" {
+//            touchIdAction()
+//        } else {
+//            let alertViewCode = UIAlertController(title: "Friend", message: "Your are not connected to iosda-training wifi", preferredStyle: .alert)
+//            
+//            let dismissAction = UIAlertAction(title: "Dismiss", style: .default, handler: { (_) in
+//                
+//            })
+//            
+//            alertViewCode.addAction(dismissAction)
+//            
+//            self.present(alertViewCode, animated: true, completion: nil)
+//            
+//        }
     }
     
     func fetchSSIDInfo() ->  String {
@@ -242,7 +242,7 @@ class FindLockerViewController: UIViewController {
 extension FindLockerViewController: LockerDataDelegate {
     func getLockerData(locker: Locker) {
         self.locker = locker
-        print("current locker data:")
-        print(self.locker)
+//        print("current locker data:")
+//        print(self.locker)
     }
 }

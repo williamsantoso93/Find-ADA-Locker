@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7A416B34233738030045112B /* TableDataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A416B33233738030045112B /* TableDataViewController.swift */; };
 		7A8172E4233251AD00F47377 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A8172E3233251AD00F47377 /* AppDelegate.swift */; };
 		7A8172E6233251AD00F47377 /* FindLockerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A8172E5233251AD00F47377 /* FindLockerViewController.swift */; };
 		7A8172E9233251AD00F47377 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7A8172E7233251AD00F47377 /* Main.storyboard */; };
@@ -43,6 +44,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7A416B33233738030045112B /* TableDataViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableDataViewController.swift; sourceTree = "<group>"; };
 		7A8172E0233251AD00F47377 /* Find ADA Locker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Find ADA Locker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7A8172E3233251AD00F47377 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7A8172E5233251AD00F47377 /* FindLockerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindLockerViewController.swift; sourceTree = "<group>"; };
@@ -155,6 +157,7 @@
 				7A8172E5233251AD00F47377 /* FindLockerViewController.swift */,
 				7A817315233258FE00F47377 /* ChooseZoneViewController.swift */,
 				7A8173172332590D00F47377 /* ChooseLockerViewController.swift */,
+				7A416B33233738030045112B /* TableDataViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -316,6 +319,7 @@
 				7A8172EC233251AD00F47377 /* Find_ADA_Locker.xcdatamodeld in Sources */,
 				7A817316233258FE00F47377 /* ChooseZoneViewController.swift in Sources */,
 				7A8172E6233251AD00F47377 /* FindLockerViewController.swift in Sources */,
+				7A416B34233738030045112B /* TableDataViewController.swift in Sources */,
 				7A8172E4233251AD00F47377 /* AppDelegate.swift in Sources */,
 				7A81732323325AD700F47377 /* ChooseLockerCollectionViewCell.swift in Sources */,
 				7A81732823328A6E00F47377 /* Modal.swift in Sources */,

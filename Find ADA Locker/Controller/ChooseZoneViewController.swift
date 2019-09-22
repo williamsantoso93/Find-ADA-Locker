@@ -67,7 +67,7 @@ extension ChooseZoneViewController: UICollectionViewDelegate, UICollectionViewDa
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         index = indexPath.row
-        print(index)
+//        print(index)
         performSegue(withIdentifier: "ChooseLocker", sender: self)
     }
 }

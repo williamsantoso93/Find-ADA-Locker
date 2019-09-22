@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="uZt-PS-M76">
-    <device id="retina6_1" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="uZt-PS-M76">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -30,6 +28,7 @@
                                 </state>
                                 <connections>
                                     <action selector="findLockerButtonDidTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="iy3-go-pso"/>
+                                    <segue destination="tJx-9w-FsD" kind="show" id="bXB-E1-SC8"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" alpha="0.0" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="euT-kR-7Gh">
@@ -70,6 +69,58 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1047.8260869565217" y="137.94642857142856"/>
+        </scene>
+        <!--Table Data View Controller-->
+        <scene sceneID="eiF-KD-6Mg">
+            <objects>
+                <viewController id="tJx-9w-FsD" customClass="TableDataViewController" customModule="Find_ADA_Locker" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="6d3-Dx-jlb">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="756"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="viM-h4-DnP">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="722"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" id="aY3-Rn-riH">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="aY3-Rn-riH" id="3rR-Ok-jpg">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <sections/>
+                                <connections>
+                                    <outlet property="dataSource" destination="tJx-9w-FsD" id="o7J-CL-B9o"/>
+                                    <outlet property="delegate" destination="tJx-9w-FsD" id="kOt-bv-FWu"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="2Zi-mx-dOm" firstAttribute="bottom" secondItem="viM-h4-DnP" secondAttribute="bottom" id="7M8-ou-mv7"/>
+                            <constraint firstItem="viM-h4-DnP" firstAttribute="leading" secondItem="2Zi-mx-dOm" secondAttribute="leading" id="auA-dS-SUX"/>
+                            <constraint firstItem="2Zi-mx-dOm" firstAttribute="trailing" secondItem="viM-h4-DnP" secondAttribute="trailing" id="rLq-72-LjC"/>
+                            <constraint firstItem="viM-h4-DnP" firstAttribute="top" secondItem="2Zi-mx-dOm" secondAttribute="top" id="wcF-tC-O9h"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="2Zi-mx-dOm"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="WI3-UE-UeG">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="GBv-nj-XsL">
+                            <connections>
+                                <action selector="addButton:" destination="tJx-9w-FsD" id="Nta-qe-0KZ"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="tableView" destination="viM-h4-DnP" id="KMl-qA-met"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jc8-u0-KcW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1048" y="870"/>
         </scene>
         <!--Choose Zone-->
         <scene sceneID="oQW-7Y-l3m">

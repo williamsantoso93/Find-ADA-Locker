@@ -108,7 +108,7 @@ extension ChooseLockerViewController: UICollectionViewDelegate, UICollectionView
                 
                 let dismissAction = UIAlertAction(title: "Dismiss", style: .default, handler: { (_) in
                     self.locker.ownership = "haveLocker"
-                    print(self.index)
+//                    print(self.index)
                     self.locker.zone = self.zone.rawValue
                     self.locker.lockerNumber = self.lockerNumber
                     self.locker.lockerCode = randomPasscode
